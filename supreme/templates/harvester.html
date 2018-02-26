@@ -1,0 +1,24 @@
+<html>
+  <head>
+    {% if token %}
+      <title></title>
+    {% else %}
+      <title>Fill out captchas</title>
+    {% endif %}
+
+  </head>
+  <body>
+    {% if token %}
+    <p id="token" value="{{ token }}" style="padding: 3px; word-break: break-all; word-wrap: break-word;">{{ token }}</p>
+    {% else %}
+      <p>Token Harvesting</p>
+      <form action="." method="post">
+        <fieldset>
+          <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+           <div class="g-recaptcha" data-sitekey="6LdAEkgUAAAAAKa4RxyyQRWpmCHov5dgY_rnBNjj"></div>
+         <p><input type="submit" value="Submit" id="submit"/></p>
+        </fieldset>
+      </form>
+    {% endif %}
+  </body>
+</html>

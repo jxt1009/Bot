@@ -1,0 +1,29 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# ChromeDriver binary and
+chromedriver
+chromedriver.exe
+ChromeFolder/
+ChromeTokenHarvestFolder/
+
+# d3stryr-3stripes files
+config.cfg
+
+# Python Cache
+__pycache__
+
+# VirtualEnv files
+env/
